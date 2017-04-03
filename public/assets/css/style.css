@@ -3095,3 +3095,7 @@ a[href^="https://maps.google.com/maps"] {
 
 
 .green {color: green !important;}
+
+.maps iframe{
+    pointer-events: none;
+}

@@ -216,7 +216,14 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
 
 
 app.controller('ConCtrl', function($scope, $timeout, details) {
-  function initialize() {
+  $('.maps').click(function () {
+    $('.maps iframe').css("pointer-events", "auto");
+});
+
+$( ".maps" ).mouseleave(function() {
+  $('.maps iframe').css("pointer-events", "none");
+});
+  /*function initialize() {
       var farmgate = {
           lat: 51.4049697,
           lng: -0.09963229999993928
@@ -298,9 +305,9 @@ app.controller('ConCtrl', function($scope, $timeout, details) {
               }, {
                   "visibility": "on"
               }]
-          }]*/
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+          }]
+      };*/
+      /*var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
       var marker = new google.maps.Marker({
           position: farmgate,
           map: map,
@@ -309,6 +316,6 @@ app.controller('ConCtrl', function($scope, $timeout, details) {
       });
       marker.addListener('click', toggleBounce);
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', initialize);*/
 
 })
