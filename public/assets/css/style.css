@@ -444,7 +444,7 @@ input:-webkit-autofill:focus {
 
 .header-button {
     position: absolute;
-    right: 0;
+    right: -17px;
     top: 0;
 }
 

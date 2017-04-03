@@ -1,11 +1,11 @@
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
 .about-area .setion-title::after {
   border-width: 60px 47px 11px 243px;
-} 
-   
+}
+
 }
 @media only screen and (min-width: 991px) and (max-width: 1299px) {
-    
+
 .hero-area-menu ul.nav.navbar-nav li a {
   padding: 32px 9px;
 }
@@ -17,13 +17,13 @@
 }
 .owl-item.active.center .single-client::before {
   transform: rotate(6deg);
-}    
+}
 .vission-area .mission-area-single-img > img {
   height: 315px;
 }
 .mission-area-text {
   padding-top: 0;
-}   
+}
 .vission-area .mission-area-text {
   padding-top: 0;
 }
@@ -46,32 +46,32 @@
 }
 .single-blog a {
   margin-bottom: 5px;
-}    
+}
 .single-blog a {
   font-size: 12px;
-}    
+}
 .comment-content {
   width: 88%;
 }
-    
-    
-    
-    
+
+
+
+
 .single-sevice-area .blog-right-menu {
   padding-right: 50px;
-}    
-    
-    
-    
-    
+}
+
+
+
+
 .single-pro-img button {
   width: 213px;
 }
-    
-    
-    
-    
-    
+
+
+
+
+
 }
 
 /* Tablet Layout: 768px. */
@@ -80,10 +80,10 @@
         text-align: center;
     }
     .logo-area a img {
-        height: 24px;
-        width: 94px;
-        padding: 0;
-    }
+    height: 100%;
+    width: 100%;
+    padding: 17px 0 0 0;
+}
 
     .hero-area-menu ul.nav.navbar-nav li a {
         font-size: 12px;
@@ -202,7 +202,7 @@
   margin-bottom: 50px;
 }
 /*Product Area*/
-    
+
 /*==========================================================================
     Blog Strart
 =====================================================================*/
@@ -263,7 +263,7 @@
 }
 
 /* Biling Deatils   */
-    
+
 /*Product Area*/
 .product.search-area::after {
 
@@ -274,7 +274,7 @@
 .header-right.single-blog-icon ul li a {
   margin-right: -6px;
 }
-    
+
 .search-area::after {
   left: -18px;
 }
@@ -291,11 +291,11 @@
 .single-client {
   padding: 30px 10px;
 }
-    
+
 .welcome-slider-area {
   height: 660px;
 }
-    
+
 
 .flickr_badge_image {
     width: 50%;
@@ -317,12 +317,12 @@
 .single-team-member {
     margin: 20px 0;
 }
-   
+
 .project-area .single-project {
     width: 50%;
 }
 
-    
+
 
 /*========================================================================================================*/
     /* Tablet Layout: 768px.  End*/
@@ -336,6 +336,22 @@
     /*=====================================================================
 	Dropdown Menu Starts when use dropdown for mobile Device
 ===================================================================== */
+    .about-area::before {
+        background: none;
+    }
+
+    .about-area.window-about::before {
+      background: none;
+    }
+
+    .single-about.about-area.doors::before {
+      background: none;
+    }
+
+    .about-area.conserv::before {
+      background: none;
+    }
+
     .hero-area-menu .nav.navbar-nav li:hover ul.dropdown-menu {
         left: 80px;
         top: 30px;
@@ -367,7 +383,7 @@
         padding-top: 2px;
     }
     .hero-area-mainmenu {
-        padding-top: 60px;
+        /*padding-top: 60px;*/
     }
     #bs-example-navbar-collapse-1 {
         background: #ffffff none repeat scroll 0 0;
@@ -445,7 +461,7 @@
       position: static;
     }
         .hero-area-mainmenu {
-        padding-top: 70px;
+      /*  padding-top: 70px;*/
     }
     .slider-area {
         height: 450px;
@@ -588,7 +604,7 @@
         margin-left: -45px;
         width: 90px;
     }
-   
+
     .topfooter-area img {
         margin-bottom: 20px;
     }
@@ -624,7 +640,7 @@
     .search-area {
       padding-left: 0;
     }
-   
+
     /*=====================================================================
     Blog Page Strat
   =====================================================================*/
@@ -650,7 +666,7 @@
   border-left: 5px solid #f6bd41;
   margin: 0;
   padding: 0 16px;
-     
+
 }
 .single-sevice-area {
     padding-top: 20px;
@@ -662,7 +678,7 @@
 .single-sevice-area .blog-right-menu{
         padding-left: 0px;
     }
-    
+
     .single-blog-content-text {
       padding-left: 0px;
         }
@@ -695,20 +711,20 @@
   =====================================================================*/
  /*=====================================================================
    About-Us Page  Start
-  =====================================================================*/   
+  =====================================================================*/
 .section-banner {
 
   padding: 30px 0;
 
-} 
-    
+}
+
 .about-border img {
   left: -100px;
   top: -60px;
 }
 /*=====================================================================
    About-Us Page  Start
-  =====================================================================*/      
+  =====================================================================*/
 .about-border {
     border: medium none;
     margin-left: 0;
@@ -735,16 +751,16 @@
 .mission-area-single-img > img {
   margin: 10px 0;
 }
-    
+
  blockquote {
   border-left: 5px solid #f6bd41;
   margin: 0;
   padding: 15px 8px;
-}   
+}
 
 /*=====================================================================
    About-Us Page  End
-  =====================================================================*/      
+  =====================================================================*/
 /*  =========================================================
     Contact Page Start
 =============================================================*/
@@ -760,9 +776,9 @@
 /* =========================================================
     Contact Page End
 =============================================================*/
-    
+
 /*Biling Deatils*/
-    
+
 .billing-form form input, .billing-area form select {
     width: 285px;
 }
@@ -788,9 +804,9 @@
 .product.search-area::after {
   display: none;
 }
-    
+
 /*  Thanks Page Start*/
-    
+
 .thank-area {
     height: 420px;
 }
@@ -806,7 +822,7 @@
 }
 /*Mama*/
 .hero-area-menu {
-    display: block;   
+    display: block;
     width: 100%;
 }
 .header-button a {
@@ -820,16 +836,16 @@
 /*Mama*/
   .porject-list ul li {
       padding: 15px 0;
-    }   
-    
-    
+    }
+
+
 /*Footer Area Start */
 .footer-area p {
     display: block;
     margin-bottom: 0;
     text-align: center;
 }
-    
+
     .footer-input input {
       width: 100%;
     }
@@ -840,7 +856,7 @@
   color: #000;
   padding: 8px;
 }
-    
+
 .mission-area-text {
   font-size: 16px;
   padding-right: 0;
@@ -851,16 +867,16 @@
   padding-right: 0;
   padding-top: 25px;
 }
-   
+
 .porject-list ul li i {
   padding: 0 10px;
-}  
+}
 .project-area .single-project {
   width: 100%;
 }
 /*  Thanks Page Start*/
-    
-    
+
+
  .owl-item.active.center .single-client::before {
       transform: rotate(6deg);
     }
@@ -883,7 +899,7 @@
     .header-left {
         text-align: center;
     }
-    
+
     .header-right {
       padding-right: 80px;
       text-align: center;
@@ -929,28 +945,28 @@
     .client-area {
         position: relative;
         text-align: center;
-        
+
     }
     /*Client Area End*/
-    
-    
+
+
     .owl-item.active.center .single-client::before {
       transform: rotate(4deg);
     }
-    
+
 /* Billing Deatils*/
  .billing-form form input, .billing-area form select {
   width: 440px;
  }
-    
+
 /* Billing Deatils*/
   .activeits-content > h4{
         font-size: 18px;
     }
-    
+
     .quate-area .quote-btn-black{
         float: none;
-    }  
+    }
     .activeits-content > p {
         font-size: 16px;
     }
@@ -961,18 +977,18 @@
     }
 
     /*Footer Area Start*/
-    
-    
+
+
     .footer-input input {
       width: 100%;
     }
 
-   
-    
-    
-    
-    
-    
+
+
+
+
+
+
 }
 
 /*========================================================================================================
