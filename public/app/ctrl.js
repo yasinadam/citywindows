@@ -199,7 +199,7 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
         });
     }
 
-  }, 500);
+  }, 1000);
 
 
 

@@ -581,7 +581,7 @@ input:-webkit-autofill:focus {
     content: "";
     background: #000000;
     z-index: -1;
-    opacity: .3;
+    opacity: .2;
 }
 
 
@@ -1040,7 +1040,7 @@ input:-webkit-autofill:focus {
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    margin-right: 30px;
+    /*margin-right: 30px;*/
     margin-top: 20px;
     padding: 13px 25px;
     width: 230px;
@@ -2275,7 +2275,7 @@ blockquote {
 }
 
 .single-team-member-hover {
-    background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
+    /*background: rgba(0, 0, 0, 0.85) none repeat scroll 0 0;
     bottom: -5px;
     height: 100%;
     left: 0;
@@ -2283,7 +2283,7 @@ blockquote {
     transform: translateY(100%);
     transition: all 0.6s ease 0s;
     width: 100%;
-    z-index: 2;
+    z-index: 2;*/
 }
 
 .single-team-member-hover ul.socials {
@@ -2310,8 +2310,8 @@ blockquote {
 }
 
 .single-team-member:hover .single-team-member-hover {
-    transform: translateY(0px);
-    bottom: 0;
+    /*transform: translateY(0px);
+    bottom: 0;*/
 }
 
 .single-team-member:hover .team-member-etails > h4 {
@@ -2320,7 +2320,7 @@ blockquote {
 
 .single-team-member:hover .team-member-etails > p {
     /*color: #f4f4f4;*/
-    margin: 0;
+    /*margin: 0;*/
 }
 
 .team-member-etails > h4 {
