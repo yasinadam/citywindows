@@ -215,14 +215,20 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
 })
 
 
-app.controller('ConCtrl', function($scope, $timeout, details) {
+app.controller('ConCtrl', function($scope, $timeout, details, $location) {
+  var paramValue = $location.search().src;
+  if(paramValue == 'sent') {
+    $location.url($location.path());
+    alert('Email sent! We will reply shortly. Thank you.');
+  }
+
   $('.maps').click(function () {
     $('.maps iframe').css("pointer-events", "auto");
-});
+  });
 
-$( ".maps" ).mouseleave(function() {
-  $('.maps iframe').css("pointer-events", "none");
-});
+  $( ".maps" ).mouseleave(function() {
+    $('.maps iframe').css("pointer-events", "none");
+  });
   /*function initialize() {
       var farmgate = {
           lat: 51.4049697,
