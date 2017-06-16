@@ -262,7 +262,7 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
             }
         }
     });
-  }, 2000)
+  }, 4000)
 
 
 
