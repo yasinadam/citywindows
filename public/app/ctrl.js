@@ -236,6 +236,35 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
   }, 1000);
 
 
+  //    client-area
+  $timeout(function () {
+    $('.partner-slide').owlCarousel({
+        items: 5,
+        loop: true,
+        margin: 0,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        autoplayHoverPause: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 2,
+            },
+            480: {
+                items: 3,
+            },
+            768: {
+                items: 4,
+            },
+            991: {
+                items: 5,
+            }
+        }
+    });
+  }, 2000)
+
+
 
 
 
