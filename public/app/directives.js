@@ -11,7 +11,7 @@ app.directive('head', function() {
 app.directive('navi', function() {
 	return {
 		templateUrl: dir+'navi.html',
-		controller: 'HomeCtrl',
+		controller: 'NaviCtrl',
 	}
 })
 
@@ -32,6 +32,13 @@ app.directive('cta', function() {
 app.directive('info', function() {
 	return {
 		templateUrl: dir+'info.html',
+		controller: 'HomeCtrl',
+	}
+})
+
+app.directive('extra', function() {
+	return {
+		templateUrl: dir+'extra.html',
 		controller: 'HomeCtrl',
 	}
 })

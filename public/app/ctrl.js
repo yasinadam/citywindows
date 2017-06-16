@@ -1,6 +1,40 @@
+app.controller('NaviCtrl', function($scope) {
+
+  $scope.menuItems = [
+    {url: '/double-glazing', name: 'Double Glazing', cat: 'windows'},
+    {url: '/upvc-windows', name: 'uPVC Windows', cat: 'windows'},
+    {url: '/timber-windows', name: 'Timber Windows', cat: 'windows'},
+    {url: '/aluminium-windows', name: 'Aluminium Windows', cat: 'windows'},
+    {url: '/sash-windows', name: 'Sash Windows', cat: 'windows'},
+    {url: '/tilt-turn-windows', name: 'Tilt Turn Windows', cat: 'windows'},
+    {url: '/dual-turn-windows', name: 'Dual Turn Windows', cat: 'windows'},
+    {url: '/secondary-glazing', name: 'Secondary Glazing', cat: 'windows'},
+    {url: '/doors', name: 'Doors', cat: 'doors'},
+    {url: '/composite-doors', name: 'Composite Doors', cat: 'doors'},
+    {url: '/upvc-doors', name: 'uPVC Doors', cat: 'doors'},
+    {url: '/timber-doors', name: 'Timber Doors', cat: 'doors'},
+    {url: '/aluminium-doors', name: 'Aluminium Doors', cat: 'doors'},
+    {url: '/entrance-doors', name: 'Entrance Doors', cat: 'doors'},
+    {url: '/bi-fold-doors', name: 'Bi-Fold Doors', cat: 'doors'},
+    {url: '/patio-doors', name: 'Patio Doors', cat: 'doors'},
+    {url: '/french-doors', name: 'French Doors', cat: 'doors'},
+    {url: '/conservatories', name: 'Conservatories', cat: 'conserv'},
+    {url: '/upvc-conservatories', name: 'UPVC Conservatories', cat: 'conserv'},
+    {url: '/timber-conservatories', name: 'Timber Conservatories', cat: 'conserv'},
+    {url: '/aluminium-conservatories', name: 'Aluminium', cat: 'conserv'},
+    {url: '/orangeries', name: 'Orangeries', cat: 'conserv'},
+    {url: '/glass-extensions', name: 'Glass Extensions', cat: 'conserv'},
+    {url: '/tiled-roof-extensions', name: 'Tiled Roof Extensions', cat: 'conserv'}
+  ];
+
+
+})
+
 app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
 
   $scope.details = details;
+
+
 
   $timeout(function () {
     new WOW().init();
