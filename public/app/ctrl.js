@@ -1,3 +1,20 @@
+//Menu Slide
+setTimeout(function(){
+  var windoWidth = $(window).width();
+
+  if (windoWidth < 768) {
+      /*$('.sub-menu a').on('click', function ($) {});*/
+
+      $('.sub-menu').on('click', function () {
+
+          $(this).toggleClass('menu-close');
+          $(this).find('a').siblings('.dropdown-menu').slideToggle(500);
+      });
+  }
+}, 4000);
+
+
+
 app.controller('NaviCtrl', function($scope) {
 
   $scope.menuItems = [
@@ -34,26 +51,35 @@ app.controller('HomeCtrl', function($scope, $timeout, details, $location) {
 
   $scope.details = details;
 
+  $scope.number = 47;
+  $scope.getNumber = function(num) {
+    return new Array(num);
+  }
+
 
 
   $timeout(function () {
+
+    /*$('.grid').packery({
+      // options
+      itemSelector: '.grid-item',
+      gutter: 5
+    });*/
+
+    var $grid = $('.grid').packery({
+      itemSelector: '.grid-item',
+      gutter: 5
+    });
+    // layout Packery after each image loads
+    $grid.imagesLoaded().progress( function() {
+      $grid.packery();
+    });
+
     new WOW().init();
 
     $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
     });
-    //Menu Slide
-    var windoWidth = $(window).width();
-
-    if (windoWidth < 768) {
-        $('.sub-menu a').on('click', function ($) {});
-
-        $('.sub-menu').on('click', function () {
-
-            $(this).toggleClass('menu-close');
-            $(this).find('a').siblings('.dropdown-menu').slideToggle(500);
-        });
-    }
 
     //Mobile Menu
 

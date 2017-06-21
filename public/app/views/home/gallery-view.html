@@ -1,57 +1,29 @@
 <div head></div>
 <div navi></div>
 
-<!--Section-banner Benner End-->
-<div class="container">
-    <div class="porject-list">
-        <ul>
-            <li data-filter="*" class="active">All<i class="fa fa-minus" aria-hidden="true"></i></li>
-            <li data-filter=".agri">Agricultural Engineering <i class="fa fa-minus" aria-hidden="true"></i></li>
-            <li data-filter=".cons"> Construction <i class="fa fa-minus" aria-hidden="true"></i> </li>
-            <li data-filter=".metal">Metal<i class="fa fa-minus" aria-hidden="true"></i> </li>
-            <li data-filter=".chemical">Chemical Reserch</li>
-        </ul>
-    </div>
+<!--=============About Area Strart=================-->
+<div class="about-banner section-banner about-page">
+    <div class="container">
+        <h2>Gallery</h2> <a href="/">Home</a><span>/</span><a href="#">Gallery</a> </div>
 </div>
+<!--Section-banner Benner End-->
+
+<!--Section-banner Benner End-->
 <div class="project-page">
     <div class="container-fluide">
         <div class="project-area">
-            <div class="single-project cons"> <img src="/assets/img/project/project-01.jpg" alt="">
+            <!--<div ng-repeat="i in getNumber(number) track by $index" class="single-project cons">
+              <img src='/assets/img/spinner.gif' lazy-img='/assets/img/gallery/{{$index+1 | numberFixedLen:3}}.jpg'/>
                 <div class="overly">
                     <h4>CONSTRUCTION PROJECT</h4>
                     <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
                 </div>
-            </div>
-
-            <div class="single-project chemical agri"> <img src="/assets/img/project/project-02.jpg" alt="">
-                <div class="overly">
-                    <h4>CONSTRUCTION PROJECT</h4>
-                    <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="single-project chemical cons"> <img src="/assets/img/project/project-03.jpg" alt="">
-                <div class="overly">
-                    <h4>CONSTRUCTION PROJECT</h4>
-                    <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="single-project agri chemical"> <img src="/assets/img/project/project-04.jpg" alt="">
-                <div class="overly">
-                    <h4>CONSTRUCTION PROJECT</h4>
-                    <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="single-project metal cons chemical"> <img src="/assets/img/project/project-05.jpg" alt="">
-                <div class="overly">
-                    <h4>CONSTRUCTION PROJECT</h4>
-                    <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                </div>
-            </div>
-            <div class="single-project metal agri cons"> <img src="/assets/img/project/project-01.jpg" alt="">
-                <div class="overly">
-                    <h4>CONSTRUCTION PROJECT</h4>
-                    <p>Project Category</p> <a href="single-project.html"><i class="fa fa-link" aria-hidden="true"></i></a>
-                </div>
+            </div> -->
+            <div class="grid">
+              <div class="grid-sizer"></div>
+              <div ng-repeat="i in getNumber(number) track by $index" class="grid-item">
+                <img src='/assets/img/gallery/{{$index+1 | numberFixedLen:2}}.jpg'/>
+              </div>
             </div>
         </div>
     </div>

@@ -52,28 +52,35 @@
                                     <!-- <li><a href="/double-glazing">Double Glazing</a></li> -->
 
                                     <li class="sub-menu">
-                                      <a href="/double-glazing">Double Glazing<span class="caret"></span></a>
+                                      <a href="#">Double Glazing<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="item in menuItems" ng-if="item.cat == 'windows' "><a href="{{item.url}}">{{item.name}}</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu">
-                                      <a href="/doors">Doors<span class="caret"></span></a>
+                                      <a href="#">Doors<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="item in menuItems" ng-if="item.cat == 'doors' "><a href="{{item.url}}">{{item.name}}</a></li>
                                         </ul>
                                     </li>
 
                                     <li class="sub-menu">
-                                      <a href="/doors">Conservatories<span class="caret"></span></a>
+                                      <a href="#">Conservatories<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li ng-repeat="item in menuItems" ng-if="item.cat == 'conserv' "><a href="{{item.url}}">{{item.name}}</a></li>
                                         </ul>
                                     </li>
 
-                                    <li><a href="/about">About</a></li>
-                                    <li><a target="_self" href="/contact">Contact</a></li>
+                                    <li class="sub-menu">
+                                      <a href="#">More<span class="caret"></span></a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="/about">About</a></li>
+                                            <li><a href="/gallery">Gallery</a></li>
+                                            <li><a target="_self" href="/contact">Contact</a></li>
+                                        </ul>
+                                    </li>
+
                                     <!--<li class="sub-menu"><a href="#">SHOP<span class="caret"></span></a>
                                         <ul class="dropdown-menu">
                                             <li><a href="shop.html">Shop</a></li>

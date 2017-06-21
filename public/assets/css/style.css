@@ -3101,3 +3101,10 @@ a[href^="https://maps.google.com/maps"] {
 }
 
 .no-border {border: none;}
+
+.grid-sizer,
+.grid-item { width: 33%; margin-bottom:1.5px; }
+/* 2 columns */
+.grid-item--width2 { width: 40%; }
+
+.black-bg {background: #000;}
